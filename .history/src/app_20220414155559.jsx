@@ -23,11 +23,11 @@ class App extends PureComponent {
   handleDecrement = habit => {
     const habits = this.state.habits.map(item => {
       if(item.id === habit.id){
-        const count = habit.count - 1
-        return {...habit, count: count < 0 ? 0 : count};
+        return {...habit, count: habit.count - 1};
       }
       return item;
     })
+    habits[index].count = count < 0 ? 0 : count;
     this.setState({habits});
   }
   handleDelete = habit => {
@@ -40,10 +40,8 @@ class App extends PureComponent {
   }
   handleReset = () => {
     const habits = this.state.habits.map(habit => {
-      if (habit.count !== 0){
-        return {...habit, count: 0};
-      }
-      return habit;
+      habit.count = 0;
+      return habit
     });
     this.setState({habits});
   }

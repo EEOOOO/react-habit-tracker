@@ -41,9 +41,9 @@ class App extends PureComponent {
   handleReset = () => {
     const habits = this.state.habits.map(habit => {
       if (habit.count !== 0){
-        return {...habit, count: 0};
+        return {...habit, count: 0}
       }
-      return habit;
+      return habit
     });
     this.setState({habits});
   }

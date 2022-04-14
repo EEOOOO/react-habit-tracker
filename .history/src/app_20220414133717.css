@@ -17,25 +17,9 @@ ul {
 }
 .navbar-total-count {
   margin-left: 1rem;
+  background-color: dark-gray;
   color: white;
   border-radius: 50%;
-}
-.navbar-count-text {
-  font-size: 1rem;
-}
-.add-form {
-  padding: 0.3rem;
-}
-.add-input {
-  padding: 0.1rem;
-  font-size: 2rem;
-}
-.add-button {
-  cursor: pointer;
-  padding: 0.3rem;
-  margin-left: 0.3rem;
-  font-size: 2rem;
-  border-radius: 5px;
 }
 .habit {
   font-size: 2.5rem;
@@ -67,12 +51,4 @@ ul {
 }
 .habit-button:hover {
   opacity: 0.8;
-}
-.habits-reset {
-  background-color: #1338be;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin-left: 7rem;
-  margin-bottom: 3rem;
 }
